@@ -37,7 +37,6 @@ This project involves:
 
 ## 🛠️ Important Links & Tools:
 
-Everything is for Free!
 - **[Datasets](datasets/):** Access to the project dataset (csv files).
 - **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
@@ -118,6 +117,10 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 ## 🌟 About Me
 
 Hi there! I'm **Brian Kimutai** — a Data Scientist, Data Analyst, and Data Engineer currently freelancing on multiple data projects. I’m passionate about building smart data solutions and sharing insights that drive real impact.
+
+---
+
+## ☕ Stay Connected
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
