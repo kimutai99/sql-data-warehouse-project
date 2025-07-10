@@ -80,7 +80,13 @@ These insights empower stakeholders with key business metrics, enabling strategi
 For more details, refer to [docs/requirements.md](docs/requirements.md).
 
 ---
+## 📊 Sample Outputs & Insights
 
+Explore example reports and dashboards generated from the data warehouse:
+
+- [Tableau Sales Dashboard (Live Link)](https://public.tableau.com/app/profile/brian.siele/viz/SalesandCustomerDashboard_17505889969040/SalesDashboard?publish=yes)
+
+---
 ## 📂 Repository Structure
 ```
 data-warehouse-project/
