@@ -1,93 +1,55 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse & Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+**A Modern Data Engineering & Analytics Solution**
 
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Built with SQL Server](https://img.shields.io/badge/Built%20With-SQL%20Server-blue)
-![Project Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
+![SQL Server](https://img.shields.io/badge/Built%20With-SQL%20Server-blue)  
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ---
 
-## 🏗️ Data Architecture
+## Overview
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:  
+End-to-end data pipeline implementing industry best practices for:
+- **Data Warehousing** (Medallion Architecture)
+- **ETL/ELT Processes**
+- **Dimensional Modeling** (Star Schema)
+- **Analytics & Reporting**
+
+---
+
+## Architecture
+
+### Medallion Data Layers
+
+| Layer  | Purpose                  | Key Features                     |
+|--------|--------------------------|----------------------------------|
+| Bronze | Raw data ingestion       | Preserves source fidelity       |
+| Silver | Cleansed & validated data| Data quality checks             |
+| Gold   | Analytics-ready models   | Star schema optimization        |
+
 ![Data Architecture](doc/data_architecture.png)
 
+---
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV files into a SQL Server database.  
-2. **Silver Layer**: Includes data cleansing, standardization, and normalization processes to prepare data for analysis.  
-3. **Gold Layer**: Contains business-ready data modeled into a star schema required for reporting and analytics.
+## Implementation
+
+### Core Components
+- **Data Sources**: ERP & CRM systems (CSV)
+- **Database**: SQL Server
+- **ETL**: SQL-based transformations
+- **Analytics**: SQL reports + Tableau dashboard
+
+### Key Features
+- Automated data ingestion pipeline
+- Data validation & cleansing
+- Slowly Changing Dimensions (Type 1)
+- Star schema dimensional model
+- Business performance dashboards
 
 ---
 
-## 📖 Project Overview
-
-This project involves:
-
-1. **Data Architecture**: Designing a modern data warehouse using the Medallion Architecture.  
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.  
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.  
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
-
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development  
-- Data Architecture  
-- Data Engineering  
-- ETL Pipeline Development  
-- Data Modeling  
-- Data Analytics  
-
----
-
-## 🛠️ Important Links & Tools:
-
-- **[Datasets](dataset/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-22911a2441d28016bfcfe98d38dd910e?source=copy_link):** Access to All Project Phases and Tasks.
-
----
-
-## 🚀 Project Requirements
-
-### Building the Data Warehouse (Data Engineering)
-
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-
----
-
-### BI: Analytics & Reporting (Data Analysis)
-
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- Customer Behavior
-- Product Performance
-- Sales Trends
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
-
-For more details, refer to [docs/requirements.md](docs/requirements.md).
-
----
-## 📊 Sample Outputs & Insights
-
-Explore example reports and dashboards generated from the data warehouse:
-
-- [Tableau Sales Dashboard (Live Link)](https://public.tableau.com/app/profile/brian.siele/viz/SalesandCustomerDashboard_17505889969040/SalesDashboard?publish=yes)
-
----
-## 📂 Repository Structure
+## Repository Structure
 ```
 data-warehouse-project/
 │
@@ -115,25 +77,29 @@ data-warehouse-project/
 ```
 ---
 
+## Sample Output
+
+[![Tableau Dashboard](https://img.shields.io/badge/View_Dashboard-Tableau-blue)](https://public.tableau.com/app/profile/brian.siele/viz/SalesandCustomerDashboard_17505889969040/SalesDashboard)
 
 ---
 
-## 🛡️ License
-
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
-
----
-
-## 🌟 About Me
-
-Hi there! I'm **Brian Kimutai** — a Data Scientist, Data Analyst, and Data Engineer currently freelancing on multiple data projects. I’m passionate about building smart data solutions and sharing insights that drive real impact.
+## Tools
+- **Database**: SQL Server
+- **ETL**: T-SQL
+- **Visualization**: Tableau
+- **Diagramming**: Draw.io
+- **Version Control**: Git/GitHub
 
 ---
 
-## ☕ Stay Connected
+## License
+MIT License - See [LICENSE](LICENSE) for details.
 
-Let's stay in touch! Feel free to connect with me on the following platforms:
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brian-kimutai-0888352b6/)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kimutai99.github.io/briankimutai.github.io/)  
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kimutai99)
+## Author
+**Brian Kimutai**  
+Data Engineer & Analyst  
+
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue)](https://www.linkedin.com/in/brian-kimutai-0888352b6/)  
+[![Portfolio](https://img.shields.io/badge/View-Portfolio-black)](https://kimutai99.github.io/briankimutai.github.io/)
